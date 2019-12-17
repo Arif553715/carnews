@@ -1,6 +1,7 @@
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
+$email = $_POST['phone'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 $formcontent=" From: $name \n subject: $subject \n  Message: $message";
