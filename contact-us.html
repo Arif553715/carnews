@@ -177,40 +177,35 @@
                 <div class="contact-page-description">
                     <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                         <div id="success-message"></div>
-                        <form  class="contact_us_popup" id="reg-form" action="http://formspree.io/arif553715@gmail.com" method="post">
+                        <form id="contact-form" class="contact_us_popup" action="mail.php" method="post">
                             <div class="row">
                                 <h4>REQUEST A QUOTE</h4>
                                 <p>Donec ac viverra ligula, in scelerisque leo.</p>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Enter Name" class="form-control required name" name="name" aria-required="true" id="name" required>
+                                        <input name="name" type="text" placeholder="Enter Name" class="form-control required name" aria-required="true" id="name" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input type="email" placeholder="Email" class="form-control required email" name="email" aria-required="true" id="email" required>
+                                        <input name="email" type="email" placeholder="Email" class="form-control required email" aria-required="true" id="email" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Phone" class="form-control" name="phone" id="phone" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
+                                        <input name="subject" type="text" placeholder="Subject" class="form-control" id="subject" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea placeholder="Message" rows="7" class="form-control required" name="message" required></textarea>
+                                <textarea name="message" placeholder="Message" rows="7" class="form-control required" required></textarea>
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-primary" type="submit">Send your message</button>
                             </div>
                         </form>
-                        <div id="message"></div>
+						
+                        <div class="ajax-response"></div>
                     </div>
                     <div class="col-mg-4 col-md-4 col-sm-6 col-xs-12">
                          <div class="sidebar-wrap">
@@ -458,8 +453,9 @@
     <script type="text/javascript" src="js/filterize-controls.js"></script>
     <!-- magnific-popup -->
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/ajax-form.js"></script>
     <!-- Custom JS File -->
-    <script src="js/contact.js"></script>
+    <!--<script src="js/contact.js"></script>-->
     <script src="js/custom.js"></script>
 
 </body>
